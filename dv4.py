@@ -1,8 +1,20 @@
 import pandas as pd
-import matplotlib.pyplot as plt
-dt=pd.read_csv("hotel.csv")
-
-dt.plot(kind='box',x='year',vert=False)
+import matplotlib.pyplot as plt 
+data=pd.read_csv("resort.csv")
+df=pd.DataFrame(data)
+df.plot(kind='box', x='year')
+plt.title("RESORT RATINGS")
+plt.ylabel("ratings")
 plt.xlabel("year")
-plt.ylabel("Hotels")
+plt.show()
+
+
+import pandas as pd
+import matplotlib.pyplot as plt 
+data=pd.read_csv("resort.csv")
+df=pd.DataFrame(data)
+df.plot(kind='box', x='year', vert = False)
+plt.title("RESORT RATINGS")
+plt.ylabel("ratings")
+plt.xlabel("year")
 plt.show()
