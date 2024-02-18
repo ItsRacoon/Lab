@@ -9,6 +9,8 @@ plt.xlabel("year")
 plt.show()
 
 
+/2
+
 import pandas as pd
 import matplotlib.pyplot as plt 
 data=pd.read_csv("resort.csv")
